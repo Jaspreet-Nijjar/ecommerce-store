@@ -5,6 +5,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  position: sticky;
 }
 
 .navbar-container a {
@@ -15,6 +16,26 @@
   text-transform: uppercase;
 }
 
+.navbar-container a:hover {
+  color: #dcd9cd;
+  transition: 0.3s ease-in-out;
+}
+
 .fa-cart-shopping {
   margin-left: 10px;
+  font-size: 25px;
+  position: relative;
+  border-radius: 50%;
+  border: 1px solid white;
+  padding: 10px;
+}
+
+.cart-items-number {
+  border-radius: 50%;
+  background-color: red;
+  color: white;
+  padding: 2px 7px;
+  position: absolute;
+  bottom: 16px;
+  right: 52px;
 }

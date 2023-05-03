@@ -9,7 +9,7 @@ export const Navbar = () => {
       <Link to="/products">Products</Link>
 
       <div className="navbar-cart">
-        <i class="fa-solid fa-cart-shopping"></i>
+        <i className="fa-solid fa-cart-shopping"></i>
         <div className="cart-items-number">3</div>
       </div>
     </nav>

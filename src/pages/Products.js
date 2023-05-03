@@ -1,3 +1,20 @@
+import React, { useState, useEffect } from 'react';
+import { Product } from '../components/Product';
+import { useFetch } from '../hooks/useFetch';
+
 export const Products = () => {
-  return <h1>Products</h1>;
+  const { products, loading, error } = useFetch(
+    'https://fakestoreapi.com/products'
+  );
+
+  return (
+    <section className="products-container">
+      {loading && <p>Loading...</p>}
+      {error && <p>{error.message}</p>}
+      {products &&
+        products.map((product) => {
+          return <Product product={product} key={product.id} />;
+        })}
+    </section>
+  );
 };

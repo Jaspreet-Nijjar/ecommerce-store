@@ -3,6 +3,7 @@ import { Navbar } from './components/Navbar';
 import { ShoppingCartProvider } from './context/ShoppingCartContext';
 import { Home } from './pages/Home';
 import { Products } from './pages/Products';
+import { ShoppingCart } from './components/ShoppingCart';
 
 function App() {
   return (

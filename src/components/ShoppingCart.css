@@ -1,0 +1,25 @@
+.cart-wrapper h1 {
+  font-size: 2em;
+}
+
+.cart-buttons {
+  display: flex;
+  flex-direction: column;
+  width: 150px;
+  gap: 10px;
+}
+
+.cart-buttons button {
+  padding: 7px;
+  font-size: 1.2em;
+  border: none;
+  cursor: pointer;
+}
+
+.cart-buttons button:nth-child(1) {
+  background-color: #66ff99;
+}
+
+.cart-buttons button:nth-child(2) {
+  background-color: #f4cccc;
+}

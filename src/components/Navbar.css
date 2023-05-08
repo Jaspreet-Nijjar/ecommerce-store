@@ -8,12 +8,17 @@
   position: sticky;
 }
 
+.navbar-container a,
+.navbar-cart {
+  margin-right: 300px;
+}
+
 .navbar-container a {
   color: white;
-  margin: 0 20px;
   text-decoration: none;
   font-size: 1.2em;
   text-transform: uppercase;
+  margin: 0 20px;
 }
 
 .navbar-container a:hover {
@@ -22,7 +27,6 @@
 }
 
 .fa-cart-shopping {
-  margin-left: 10px;
   font-size: 25px;
   position: relative;
   border-radius: 50%;

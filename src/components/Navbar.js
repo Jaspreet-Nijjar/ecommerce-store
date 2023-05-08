@@ -12,7 +12,7 @@ export const Navbar = () => {
       <Link to="/products">Products</Link>
 
       <div className="navbar-cart">
-        <i className="fa-solid fa-cart-shopping" onClick={openCart}></i>
+        <i className="fa-solid fa-cart-shopping"></i>
         {cartQuantity !== 0 && (
           <div className="cart-items-number">{cartQuantity}</div>
         )}

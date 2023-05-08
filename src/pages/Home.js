@@ -1,5 +1,7 @@
 import './Home.css';
 import HomeHero from '../assets/home-image.jpg';
+import Electronics from '../assets/electronics.jpg';
+import Jewellery from '../assets/jewellery.jpg';
 import { useFetch } from '../hooks/useFetch';
 import { Link } from 'react-router-dom';
 
@@ -14,6 +16,12 @@ export const Home = () => {
           alt="woman scrolling on the phone on the couch"
           className="home-hero-image"
         />
+
+        <img
+          src={Jewellery}
+          alt="shiny silver bracelet"
+          className="home-hero-image"
+        />
       </div>
       <div className="home-content">
         <h1>Explore the best online store!</h1>
@@ -25,6 +33,11 @@ export const Home = () => {
         <Link to="/products" className="home-btn">
           Shop Now!
         </Link>
+        <img
+          src={Electronics}
+          alt="electronic devices including headphones and laptop"
+          className="home-electronics-img"
+        />
       </div>
     </section>
   );

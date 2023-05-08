@@ -1,0 +1,33 @@
+.cart-item-total {
+  font-size: 1.2em;
+  margin-top: 50px;
+}
+
+.cart-item-image {
+  width: 70px;
+  height: 80px;
+}
+
+.cart-item-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 30px 40px;
+}
+
+.cart-item-title {
+  font-size: 0.9em;
+}
+
+.item-quantity {
+  display: flex;
+  flex-direction: row;
+}
+
+.item-quantity button {
+  width: 40px;
+  margin: 0 10px;
+  font-weight: bold;
+  font-size: 0.9em;
+  border: none;
+  cursor: pointer;
+}

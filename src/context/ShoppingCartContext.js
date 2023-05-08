@@ -52,6 +52,7 @@ export const ShoppingCartProvider = ({ children }) => {
         cartQuantity,
         openCart,
         closeCart,
+        cartItems,
       }}
     >
       {children}

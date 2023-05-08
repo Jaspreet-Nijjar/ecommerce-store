@@ -3,6 +3,8 @@ import { useShoppingCart } from '../context/ShoppingCartContext';
 import { useFetch } from '../hooks/useFetch';
 
 export const CartItem = ({ id, quantity }) => {
+  const { increaseCartQuantity, decreaseCartQuantity } = useShoppingCart();
+
   const { products } = useFetch('https://fakestoreapi.com/products');
 
   const product = products.find((product) => product.id == id);
@@ -21,9 +23,9 @@ export const CartItem = ({ id, quantity }) => {
         <p className="cart-item-price">${product.price.toFixed(2)}</p>
 
         <div className="item-quantity">
-          <button>-</button>
+          <button onClick={() => decreaseCartQuantity(product.id)}>-</button>
           <p>{quantity}</p>
-          <button>+</button>
+          <button onClick={() => increaseCartQuantity(product.id)}>+</button>
         </div>
       </div>
     </section>

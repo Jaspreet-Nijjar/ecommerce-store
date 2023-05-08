@@ -40,6 +40,22 @@ export const ShoppingCartProvider = ({ children }) => {
     });
   };
 
+  const decreaseCartQuantity = (id) => {
+    setCartItems((currItems) => {
+      if (currItems.find((product) => product.id === id)?.quantity === 1) {
+        return currItems.filter((product) => product.id !== id);
+      } else {
+        return currItems.map((product) => {
+          if (product.id === id) {
+            return { ...product, quantity: product.quantity - 1 };
+          } else {
+            return product;
+          }
+        });
+      }
+    });
+  };
+
   const cartQuantity = cartItems.reduce((acc, product) => {
     return product.quantity + acc;
   }, 0);
@@ -49,6 +65,7 @@ export const ShoppingCartProvider = ({ children }) => {
       value={{
         getItemQuantity,
         increaseCartQuantity,
+        decreaseCartQuantity,
         cartQuantity,
         openCart,
         closeCart,

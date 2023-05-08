@@ -20,7 +20,9 @@ export const CartItem = ({ id, quantity }) => {
             ? product.title
             : product.title.substr(0, 14) + '...'}
         </h3>
-        <p className="cart-item-price">${product.price.toFixed(2)}</p>
+        <p className="cart-item-price">
+          ${(product.price * quantity).toFixed(2)}
+        </p>
 
         <div className="item-quantity">
           <button onClick={() => decreaseCartQuantity(product.id)}>-</button>

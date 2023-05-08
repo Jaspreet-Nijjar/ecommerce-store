@@ -55,7 +55,7 @@ export const ShoppingCartProvider = ({ children }) => {
       }}
     >
       {children}
-      <ShoppingCart />
+      <ShoppingCart isOpen={isOpen} />
     </ShoppingCartContext.Provider>
   );
 };

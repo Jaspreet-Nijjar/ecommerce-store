@@ -9,7 +9,8 @@
 }
 
 .navbar-container a,
-.navbar-cart {
+.navbar-cart,
+.cart-items-number {
   margin-right: 300px;
 }
 

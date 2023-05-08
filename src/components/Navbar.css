@@ -26,7 +26,6 @@
   font-size: 25px;
   position: relative;
   border-radius: 50%;
-  border: 1px solid white;
   padding: 10px;
 }
 
@@ -38,4 +37,5 @@
   position: absolute;
   bottom: 16px;
   right: 52px;
+  font-weight: bold;
 }

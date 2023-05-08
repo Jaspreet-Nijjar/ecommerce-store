@@ -3,7 +3,7 @@ import { useShoppingCart } from '../context/ShoppingCartContext';
 import { CartItem } from './CartItem';
 import { useFetch } from '../hooks/useFetch';
 
-export const ShoppingCart = ({ isOpen, id }) => {
+export const ShoppingCart = ({ isOpen }) => {
   const { closeCart, cartItems } = useShoppingCart();
 
   const { products } = useFetch('https://fakestoreapi.com/products');
@@ -23,7 +23,7 @@ export const ShoppingCart = ({ isOpen, id }) => {
               (product) => product.id == cartItem.id
             );
 
-            return total + (product?.price || 0) * cartItem.quantity;
+            return total + product.price * cartItem.quantity;
           }, 0)
           .toFixed(2)}
       </h3>

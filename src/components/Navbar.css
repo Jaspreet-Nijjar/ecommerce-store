@@ -5,13 +5,8 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
+  width: 100%;
   position: sticky;
-}
-
-.navbar-container a,
-.navbar-cart,
-.cart-items-number {
-  margin-right: 300px;
 }
 
 .navbar-container a {

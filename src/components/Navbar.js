@@ -7,9 +7,11 @@ export const Navbar = () => {
   const { cartQuantity, openCart } = useShoppingCart();
 
   return (
-    <nav className="navbar-container">
-      <Link to="/">Home</Link>
-      <Link to="/products">Products</Link>
+    <nav className="navbar-container wrapper">
+      <div className="nav-links">
+        <Link to="/">Home</Link>
+        <Link to="/products">Products</Link>
+      </div>
 
       <div className="navbar-cart">
         <i className="fa-solid fa-cart-shopping" onClick={openCart}></i>

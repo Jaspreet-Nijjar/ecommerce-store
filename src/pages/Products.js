@@ -8,7 +8,7 @@ export const Products = () => {
   );
 
   return (
-    <section className="products-container">
+    <section className="products-container wrapper">
       {loading && <p>Loading...</p>}
       {error && <p>{error.message}</p>}
       {products &&

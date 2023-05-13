@@ -1,38 +1,25 @@
 .home-container {
   background-color: #fffdd0;
-  height: 100%;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding: 50px;
+  display: flex;
+  justify-content: center;
 }
 
 .home-content h1 {
-  color: #333;
-  letter-spacing: 1px;
-  font-size: 2em;
-}
-
-.home-hero {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 10px;
-}
-
-.home-hero-image {
-  width: 90%;
-  height: 310px;
-  object-fit: cover;
+  color: grey;
+  letter-spacing: 1.5px;
+  font-size: 1em;
+  text-transform: uppercase;
+  text-align: center;
 }
 
 .home-content p {
   font-size: 1.3em;
-}
-
-.home-product-image {
-  width: 100px;
-  height: 100px;
-  display: block;
-  margin: 0 auto;
+  width: 90%;
+  border-radius: 5px;
+  padding: 0 5px;
+  text-align: center;
+  background-color: #cdcdcd;
+  margin: 10px auto;
 }
 
 .home-btn {
@@ -50,8 +37,16 @@
   text-align: center;
 }
 
-.home-electronics-img {
+.home-btn:hover {
+  background-color: white;
+  color: black;
+  border: 1px solid black;
+  transition: all 1s ease-in-out;
+}
+
+.home-hero-img {
   width: 100%;
-  height: 400px;
   object-fit: cover;
+  border-radius: 5px;
+  opacity: 0.4;
 }

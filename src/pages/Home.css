@@ -10,6 +10,14 @@
   text-align: center;
 }
 
+.home-products {
+  padding-bottom: 45px;
+}
+
+.home-products h3 {
+  text-align: center;
+}
+
 .home-content p {
   font-size: 1.3em;
   width: 90%;
@@ -115,6 +123,7 @@ span {
   justify-content: center;
   align-items: center;
   padding: 20px;
+  margin-top: 30px;
 }
 
 .newsletter-container h1 {

@@ -31,23 +31,6 @@ export const Home = () => {
         </Link>
       </div>
 
-      <div className="home-products">
-        <h3>Featured Products</h3>
-
-        <div className="product-container">
-          {products.map((product) => (
-            <div className="product-content">
-              <img
-                src={product.image}
-                alt="an image of a product"
-                className="home-product-img"
-              />
-              <p className="product-title">{product.title}</p>
-            </div>
-          ))}
-        </div>
-      </div>
-
       <div className="clothes-container">
         <div className="clothes-content">
           <h3 className="clothes-header">
@@ -66,11 +49,28 @@ export const Home = () => {
         />
       </div>
 
+      <div className="home-products">
+        <h3>Featured Products</h3>
+
+        <div className="product-container">
+          {products.map((product) => (
+            <div className="product-content">
+              <img
+                src={product.image}
+                alt="an image of a product"
+                className="home-product-img"
+              />
+              <p className="product-title">{product.title}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+
       <div className="newsletter-container">
         <h1>Newsletter</h1>
 
         <div className="newsletter-input">
-          <input type="text" placeholder="your@email.com" />
+          <input type="text" placeholder="Your Email Address" />
           <button className="newsletter-btn">Subscribe</button>
         </div>
       </div>

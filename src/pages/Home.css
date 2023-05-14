@@ -1,10 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
 .home-container {
-  background-color: #fffdd0;
-  display: flex;
-  justify-content: center;
+  background-color: #ffffe4;
 }
 
-.home-content h1 {
+.home-header {
   color: grey;
   letter-spacing: 1.5px;
   font-size: 1em;
@@ -20,6 +19,7 @@
   text-align: center;
   background-color: #cdcdcd;
   margin: 10px auto;
+  font-weight: 800;
 }
 
 .home-btn {
@@ -33,8 +33,10 @@
   display: block;
   margin: 30px auto;
   width: 200px;
+  height: 60px;
   text-decoration: none;
   text-align: center;
+  font-weight: 600;
 }
 
 .home-btn:hover {
@@ -49,4 +51,9 @@
   object-fit: cover;
   border-radius: 5px;
   opacity: 0.4;
+}
+
+.home-subtitle {
+  font-size: 1.8em;
+  font-family: 'Great Vibes', cursive;
 }

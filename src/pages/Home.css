@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-.home-container {
+.home-content {
   background-color: #ffffe4;
 }
 
@@ -17,9 +16,10 @@
   border-radius: 5px;
   padding: 0 5px;
   text-align: center;
-  background-color: #cdcdcd;
   margin: 10px auto;
   font-weight: 800;
+  position: absolute;
+  bottom: 30%;
 }
 
 .home-btn {
@@ -51,9 +51,63 @@
   object-fit: cover;
   border-radius: 5px;
   opacity: 0.4;
+  position: relative;
 }
 
 .home-subtitle {
   font-size: 1.8em;
-  font-family: 'Great Vibes', cursive;
+  text-align: center;
+  font-weight: 800;
+}
+
+.home-product-img {
+  display: block;
+  margin: 10px auto;
+  max-width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.product-price {
+  text-align: center;
+}
+
+.product-content {
+  background-color: white;
+  border: 1px solid #cdcdcd;
+  margin: 45px auto;
+  border-radius: 10px;
+  padding: 30px;
+  width: 200px;
+  height: 150px;
+}
+
+.product-title {
+  width: 100%;
+  font-size: 0.8em;
+}
+
+.product-container {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+@media screen and (min-width: 600px) {
+  .home-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: 150px 120px 50px 70px;
+  }
+
+  .home-content p {
+    position: static;
+  }
+
+  .home-hero-img {
+    grid-column: 2;
+  }
+
+  .product-container {
+    display: flex;
+  }
 }
